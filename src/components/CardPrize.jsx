@@ -5,7 +5,7 @@ const CardPrize =({place,prize,image,type,pcolor,anim}) => {
         <Col lg={4} md={6} sm={10} data-aos={anim} >
             <div className={type}>
                 <span className="ud-pricing-header">
-                    <h3 className="aw-card-header h2">
+                    <h3 className="aw-card-header h3">
                         {place}
                     </h3>
                 </span>

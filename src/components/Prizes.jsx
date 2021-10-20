@@ -10,7 +10,7 @@ const Prizes = () => {
         <section id="pricing" className="ud-pricing aw-dark-back">
                 <Container>
                     <Row>
-                        <Col lg={12}>
+                        <Col lg={12} data-aos="zoom-in">
                             <div className = "aw-prizing-title neonText mx-auto text-center">
                                 <h2>AWARDS</h2>
                             </div>
@@ -41,9 +41,9 @@ const Prizes = () => {
                                     anim="fade-left"
                                     />
                     </Row>
-                    <Row>
+                    <Row >
                         <Col lg={7} className="m-auto">
-                            <h3 className="h3 text-center aw-conso">
+                            <h3 className="h3 text-center aw-consolation" >
                                 Consolation prizes for other participants
                             </h3>
                         </Col>

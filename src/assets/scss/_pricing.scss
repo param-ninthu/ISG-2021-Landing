@@ -1,0 +1,253 @@
+/* ===== Pricing CSS ===== */
+$NeonP : #962d04;
+$NeonS : #885a04;
+.aw-dark{
+  background: black;
+}
+.aw-dark-back{
+  margin: 0;
+  padding: 0;
+  background-image: url(../../pictures/prizes/back.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media only screen and (max-device-width: 1000px) {
+      background-attachment: scroll;
+  }
+}
+.ud-pricing {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  
+  @media #{$xs} {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+.aw-prizing-title {
+  max-width: 620px;
+  margin-bottom: 25px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 55px;
+    text-transform: capitalize;
+    color: white;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+
+    @media #{$xs} {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+.ud-single-pricing {
+  margin-bottom: 40px;
+  background: var(--white);
+  border: 2px solid #d4deff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 35px 25px;
+  position: relative;
+  &.first-item,&.last-item {
+    background-color: rgba(19, 19, 19, 0.6);  
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(92, 92, 92, 0.692);
+    padding: 35px 25px;
+    .aw-img{
+      height: 210px;
+      padding-top:10px;
+    }
+  }
+  &.active {
+    // background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+    background-color: rgba(27, 27, 27, 0.6);  
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 139, 30, 0.692);
+    padding: 35px 25px;
+
+    .aw-img{
+      height: 250px;
+      padding-top:10px;
+    }
+    
+
+    .ud-pricing-header {
+      h3,
+      h4{
+        margin-bottom: 15px;
+      }
+    }
+    .ud-pricing-body {
+      li {
+        color: var(--white);
+      }
+    }
+  }
+
+  &.first-item::after,
+  &.last-item::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+  }
+
+  &.first-item::after {
+    background:radial-gradient(#CBD5DB 90%,#9DA7B1 10%) ;
+    left: -2px;
+    bottom: -2px;
+    border-radius: 0 55px 0 8px;
+  }
+
+  
+
+  &.last-item::after {
+    background:linear-gradient(#A44706 ,#eb7632 ) ;
+    top: -2px;
+    right: -2px;
+    border-radius: 0 8px 0 55px;
+  }
+  
+  .ud-popular-tag {
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--white);
+    border-radius: 30px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .ud-pricing-header {
+    h3 {
+      font-weight: 400;
+      margin-bottom: 8px;
+      color: white;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 26px;
+      color: var(--primary-color);
+      margin-bottom: 40px;
+    }
+  }
+
+  .ud-pricing-body {
+    margin-bottom: 40px;
+
+    li {
+      font-weight: 500;
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .ud-main-btn {
+    border-radius: 30px;
+    padding: 15px 40px;
+  }
+
+  .ud-border-btn {
+    border: 1px solid #d4deff;
+    color: var(--primary-color);
+    background: var(--white);
+
+    &:hover {
+      color: var(--white);
+      border-color: var(--primary-color);
+      background: var(--primary-color);
+    }
+  }
+  .ud-white-btn {
+    background: var(--white);
+    color: var(--heading-color);
+
+    &:hover {
+      color: var(--white);
+      background: var(--heading-color);
+    }
+  }
+}
+.aw-card-header{
+  font-weight: 600;
+  color:white;
+}
+.aw-prize{
+  transform: scale(1.3);
+  color:rgb(255, 94, 0);
+  text-shadow: rgb(0, 0, 0) 1px 1px 5px;
+}
+.aw-consolation{
+  border: 1px solid rgba(36, 36, 36, 0.541);
+  padding: 7px 7px;
+  color: white;
+  backdrop-filter: blur(5px);
+  background: rgba(183, 44, 0, 0.51);
+  box-shadow: rgba(255, 124, 1, 0.25) 0 30px 60px -12px inset,
+  rgba(238, 1, 1, 0.58) 18px 8px 36px -18px inset;
+  
+}
+
+//neon animation
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 0 $NeonP,
+      0 0 4px $NeonP,
+      0 0 11px $NeonP,
+      0 0 20px $NeonS,
+      0 0 40px $NeonS,
+      0 0 80px $NeonS,
+      0 0 90px $NeonS,
+      0 0 130px $NeonS;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+.effectHv{
+  z-index: 0;
+  &:hover{
+    transform: scale(1.1);
+    transition: all .4s;
+    z-index: 1;
+  }
+  transition: all .11s ease-in;
+}
+//aw-cons animation
+
+// .borders
+// @keyframes borders { 
+//   0%{
+//     transform: scale(1.05);
+//   }
+//   50%{        
+//     transform: scale(1);
+//   }
+//   100%{        
+//     transform: scale(1.01);
+//   }
+//   50%{        
+//     transform: scale(1);
+//   }
+// }
+
+
+

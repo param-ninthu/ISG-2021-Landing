@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './assets/scss/styles-main.scss';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Prizes from "./components/Prizes";
+import SampleSection from "./components/SampleSection";
 
 function App() {
+    AOS.init();
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +25,7 @@ function App() {
         </a>
       </header>
       <Prizes/>
+        <SampleSection/>
     </div>
   );
 }
