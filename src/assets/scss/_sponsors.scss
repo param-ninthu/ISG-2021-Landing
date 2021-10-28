@@ -1,0 +1,40 @@
+/* ===== Sponsors CSS ===== */
+
+.ud-sponsors {
+  padding-top: 120px;
+  background-color: rgb(19, 17, 17);
+
+  @media #{$xs} {
+    padding: 80px;
+  }
+
+  h2, font {
+    color: var(--white);
+  }
+
+  .ud-single-sponser {
+    border: 1px solid #FFB81C;
+    border-radius: 8px;
+    padding: 25px 5px;
+    margin: 0 5px;
+    background-color: #191a18;
+
+    font {
+      font-size: medium;
+    }
+
+    .ud-content{
+      text-align: justify;
+      padding: 10px;
+      text-align-last: center;
+    }
+  }
+  
+  .ud-single-sponser:hover {
+    transform: scale(1.1);
+    transition: .2s;
+    border-color: rgba(255, 139, 30, 0.692);
+  }
+
+}
+

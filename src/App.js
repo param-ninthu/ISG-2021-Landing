@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Prizes from "./components/Prizes";
 import SampleSection from "./components/SampleSection";
+import Sponsors from './components/Sponsors';
 
 function App() {
     AOS.init();
@@ -25,6 +26,7 @@ function App() {
         </a>
       </header>
       <Prizes/>
+      <Sponsors/>
         <SampleSection/>
     </div>
   );
