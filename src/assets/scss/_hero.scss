@@ -1,205 +1,205 @@
 /* ===== Hero CSS ===== */
 
 .ud-hero {
-  background: var(--bs-black-rgb);
-  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("https://www.emagister.com.co/blog/wp-content/uploads/2021/08/ciberataque.jpg");
-  background-position: center;
-  min-height: fit-content;
-  background-attachment: fixed;
-  padding-top: 100px;
-
-  @media #{$lg} {
+    background: var(--bs-black-rgb);
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("https://www.emagister.com.co/blog/wp-content/uploads/2021/08/ciberataque.jpg");
+    background-position: center;
+    min-height: fit-content;
+    background-attachment: fixed;
     padding-top: 100px;
-  }
 
-  @media #{$laptop} {
-    padding-top: 125px;
-    padding-bottom: 15px;
-  }
-
-  @media #{$desktop} {
-    min-height: 100vh;
-    padding-top: 160px;
-  }
-}
-
-.ud-hero-content {
-  max-width: 780px;
-  font-size: 18px;
-
-  @media #{$sm} {
-    font-size: 20px;
-  }
-
-  @media #{$laptop} {
-    font-size: 22px;
-  }
-
-  @media #{$desktop} {
-    font-size: 26px;
-  }
-
-  .ud-hero-title {
-    color: var(--white);
-    font-weight: 700;
-    text-align: center;
-    font-size: 1.8em;
-    line-height: 1.3em;
-  }
-
-  .ud-hero-logo {
-    height: 180px;
-    animation: bannerImgBounce 3s ease-in-out 0s infinite alternate;
-
-    @media #{$sm} {
-      height: 200px;
-    }
-
-    @media #{$md} {
-      height: 220px;
+    @media #{$lg} {
+        padding-top: 100px;
     }
 
     @media #{$laptop} {
-      height: 220px;
+        padding-top: 125px;
+        padding-bottom: 15px;
     }
 
     @media #{$desktop} {
-      height: 300px;
+        min-height: 100vh;
+        padding-top: 160px;
     }
-  }
+}
 
-  .ud-hero-subtitle {
-    font-weight: normal;
-    color: var(--white);
-    opacity: 0.8;
-    text-align: center;
-    font-size: 1em;
-    line-height: 1.6em;
-  }
+.ud-hero-content {
+    max-width: 780px;
+    font-size: 18px;
 
-  .ud-hero-desc {
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 0.8em;
-    text-align: center;
-    color: var(--white);
-    opacity: 0.8;
-  }
-
-  .flip-countdown {
-    color: rgba(255, 255, 255, 0.7);
-
-    .flip-countdown-title {
-      font-size: 0.8em !important;
-      padding-top: 10px;
+    @media #{$sm} {
+        font-size: 20px;
     }
 
-    .flip-countdown-piece {
-      margin: 0 0.3em;
+    @media #{$laptop} {
+        font-size: 22px;
+    }
 
-      .flip-countdown-card .flip-countdown-card-sec {
-        font-size: 64px;
-        margin: 15px;
+    @media #{$desktop} {
+        font-size: 26px;
+    }
 
-        .card__top, .card__bottom, .card__back {
-          padding: 0 0.2em;
+    .ud-hero-title {
+        color: var(--white);
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.8em;
+        line-height: 1.3em;
+    }
+
+    .ud-hero-logo {
+        height: 180px;
+        animation: bannerImgBounce 3s ease-in-out 0s infinite alternate;
+
+        @media #{$sm} {
+            height: 200px;
         }
 
-        .card__back {
-          padding: 0 0.097em;
+        @media #{$md} {
+            height: 220px;
         }
-      }
-    }
-  }
 
-  .react-rotating-text-cursor {
-    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
-  }
+        @media #{$laptop} {
+            height: 220px;
+        }
+
+        @media #{$desktop} {
+            height: 300px;
+        }
+    }
+
+    .ud-hero-subtitle {
+        font-weight: normal;
+        color: var(--white);
+        opacity: 0.8;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.6em;
+    }
+
+    .ud-hero-desc {
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 0.8em;
+        text-align: center;
+        color: var(--white);
+        opacity: 0.8;
+    }
+
+    .flip-countdown {
+        color: rgba(255, 255, 255, 0.7);
+
+        .flip-countdown-title {
+            font-size: 0.8em !important;
+            padding-top: 10px;
+        }
+
+        .flip-countdown-piece {
+            margin: 0 0.3em;
+
+            .flip-countdown-card .flip-countdown-card-sec {
+                font-size: 64px;
+                margin: 15px;
+
+                .card__top, .card__bottom, .card__back {
+                    padding: 0 0.2em;
+                }
+
+                .card__back {
+                    padding: 0 0.097em;
+                }
+            }
+        }
+    }
+
+    .react-rotating-text-cursor {
+        animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+    }
 }
 
 .ud-hero-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  .ud-main-btn {
-    margin: 8px;
-    border-radius: 8px;
-    font-size: 0.75em;
-    padding: 12px 20px;
-    outline: none;
+    .ud-main-btn {
+        margin: 8px;
+        border-radius: 8px;
+        font-size: 0.75em;
+        padding: 12px 20px;
+        outline: none;
 
-    @media #{$desktop} {
-      padding: 16px 24px;
+        @media #{$desktop} {
+            padding: 16px 24px;
+        }
     }
-  }
 
-  .ud-white-btn {
-    background: var(--white);
-    color: var(--heading-color);
+    .ud-white-btn {
+        background: var(--white);
+        color: var(--heading-color);
 
-    &:hover {
-      background: #fefefe;
-      color: var(--primary-color);
+        &:hover {
+            background: #fefefe;
+            color: var(--primary-color);
+        }
     }
-  }
 
-  .ud-link-btn {
-    &:hover {
-      color: var(--white);
-      background: transparent;
-      opacity: 0.5;
+    .ud-link-btn {
+        &:hover {
+            color: var(--white);
+            background: transparent;
+            opacity: 0.5;
+        }
     }
-  }
 }
 
 .ud-hero-image {
-  max-width: 845px;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-
-  img {
-    max-width: 100%;
+    max-width: 845px;
+    margin: auto;
     text-align: center;
-  }
+    position: relative;
+    z-index: 1;
 
-  .shape {
-    position: absolute;
-    z-index: -1;
-
-    &.shape-1 {
-      bottom: 0;
-      left: -30px;
+    img {
+        max-width: 100%;
+        text-align: center;
     }
 
-    &.shape-2 {
-      top: -20px;
-      right: -20px;
+    .shape {
+        position: absolute;
+        z-index: -1;
+
+        &.shape-1 {
+            bottom: 0;
+            left: -30px;
+        }
+
+        &.shape-2 {
+            top: -20px;
+            right: -20px;
+        }
     }
-  }
 }
 
 @keyframes blinking-cursor {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes bannerImgBounce {
-  0% {
-    -webkit-transform: translateY(6px) translateX(0);
-    transform: translateY(6px) translateX(0);
-  }
-  100% {
-    -webkit-transform: translateY(-8px) translateX(0px);
-    transform: translateY(-8px) translateX(0px);
-  }
+    0% {
+        -webkit-transform: translateY(6px) translateX(0);
+        transform: translateY(6px) translateX(0);
+    }
+    100% {
+        -webkit-transform: translateY(-8px) translateX(0px);
+        transform: translateY(-8px) translateX(0px);
+    }
 }

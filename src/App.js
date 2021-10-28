@@ -13,17 +13,17 @@ import Timeline from "./components/TimelineMain"
 
 function App() {
     AOS.init();
-  return (
-    <div className="App">
-      <NavBar/>
-      <HeroSection/>
-      <Prizes/>
-      <Sponsors/>
-      <Faq/>
-      <Timeline/>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <NavBar/>
+            <HeroSection/>
+            <Prizes/>
+            <Sponsors/>
+            <Faq/>
+            <Timeline/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
