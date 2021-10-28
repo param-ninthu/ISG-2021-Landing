@@ -1,8 +1,8 @@
 /* ===== Pricing CSS ===== */
-$NeonP: #962d04;
-$NeonS: #885a04;
-.aw-dark {
-    background: black;
+$NeonP : #8c3700;
+$NeonS : #885a04;
+.aw-dark{
+  background: black;
 }
 
 #pricing {
@@ -30,11 +30,18 @@ $NeonS: #885a04;
         padding-top: 80px;
         padding-bottom: 40px;
     }
+
+
+  @media #{$xs} {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 }
 
 .aw-prizing-title {
     max-width: 620px;
     margin-bottom: 25px;
+    margin-top: 20px;
 
     h2 {
         font-weight: 700;
@@ -119,23 +126,24 @@ $NeonS: #885a04;
         border-radius: 0 55px 0 8px;
     }
 
+  
 
-    &.last-item::after {
-        background: linear-gradient(#A44706, #eb7632);
-        top: -2px;
-        right: -2px;
-        border-radius: 0 8px 0 55px;
-    }
-
-    .ud-popular-tag {
-        display: inline-block;
-        padding: 10px 25px;
-        background: var(--white);
-        border-radius: 30px;
-        color: var(--primary-color);
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
+  &.last-item::after {
+    background:linear-gradient(#ff6600 ,#eb7632 ) ;
+    top: -2px;
+    right: -2px;
+    border-radius: 0 8px 0 55px;
+  }
+  
+  .ud-popular-tag {
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--white);
+    border-radius: 30px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
 
     .ud-pricing-header {
         h3 {
@@ -194,22 +202,22 @@ $NeonS: #885a04;
     font-weight: 600;
     color: white;
 }
-
-.aw-prize {
-    transform: scale(1.3);
-    color: rgb(255, 94, 0);
-    text-shadow: rgb(0, 0, 0) 1px 1px 5px;
+.aw-prize{
+  transform: scale(1.3);
+  color:#ff6600;
+  text-shadow: rgb(0, 0, 0) 1px 1px 5px;
 }
-
-.aw-consolation {
-    border: 1px solid rgba(36, 36, 36, 0.541);
-    padding: 7px 7px;
-    color: white;
-    backdrop-filter: blur(5px);
-    background: rgba(183, 44, 0, 0.51);
-    box-shadow: rgba(255, 124, 1, 0.25) 0 30px 60px -12px inset,
-    rgba(238, 1, 1, 0.58) 18px 8px 36px -18px inset;
-
+.aw-consolation{
+  border: 1px solid rgba(36, 36, 36, 0.541);
+  padding: 7px 7px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: white;
+  backdrop-filter: blur(5px);
+  background: #b04100;
+  box-shadow: rgba(255, 124, 1, 0.25) 0 30px 60px -12px inset,
+  rgba(238, 1, 1, 0.58) 18px 8px 36px -18px inset;
+  
 }
 
 //neon animation
@@ -222,20 +230,21 @@ $NeonS: #885a04;
 
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
-        text-shadow: 0 0 0 $NeonP,
-        0 0 4px $NeonP,
-        0 0 11px $NeonP,
-        0 0 20px $NeonS,
-        0 0 40px $NeonS,
-        0 0 80px $NeonS,
-        0 0 90px $NeonS,
-        0 0 130px $NeonS;
-
-    }
-
-    20%, 24%, 55% {
-        text-shadow: none;
-    }
+      text-shadow:
+      0 0 0 $NeonP,
+      0 0 4px $NeonP,
+      0 0 11px $NeonP,
+      0 0 20px $NeonS,
+      0 0 40px $NeonS,
+      0 0 600px $NeonS,
+      0 0 80px $NeonS,
+      0 0 110px $NeonS;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
 }
 
 .effectHv {
