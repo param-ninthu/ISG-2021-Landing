@@ -5,7 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Prizes from "./components/Prizes";
 import SampleSection from "./components/SampleSection";
-
+import Footer from "./components/footer"
+import Timeline from "./components/TimelineMain"
 function App() {
     AOS.init();
   return (
@@ -25,7 +26,10 @@ function App() {
         </a>
       </header>
       <Prizes/>
-        <SampleSection/>
+      <SampleSection/>
+      <Timeline/>
+      <SampleSection/>
+      <Footer/>
     </div>
   );
 }
