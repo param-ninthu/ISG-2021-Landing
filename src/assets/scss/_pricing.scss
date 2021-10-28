@@ -4,6 +4,10 @@ $NeonS : #885a04;
 .aw-dark{
   background: black;
 }
+#pricing{
+  overflow-x: hidden;
+}
+
 .aw-dark-back{
   margin: 0;
   padding: 0;
@@ -225,7 +229,8 @@ $NeonS : #885a04;
 .effectHv{
   z-index: 0;
   &:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: contrast(150%);
     transition: all .4s;
     z-index: 1;
   }
@@ -233,21 +238,27 @@ $NeonS : #885a04;
 }
 //aw-cons animation
 
-// .borders
-// @keyframes borders { 
-//   0%{
-//     transform: scale(1.05);
-//   }
-//   50%{        
-//     transform: scale(1);
-//   }
-//   100%{        
-//     transform: scale(1.01);
-//   }
-//   50%{        
-//     transform: scale(1);
-//   }
-// }
+ .borders{
+   animation: borders 3s infinite ;
+ }
+ @keyframes borders{
+   0%{
+     transform: scale(1.04);
+     filter: contrast(100%);
+   }
+   50%{
+     transform: scale(1);
+     filter: contrast(110%);
+   }
+   100%{
+     transform: scale(1.04);
+     filter: contrast(100%);
+   }
+   //50%{
+   //  transform: scale(1);
+   //  filter: contrast(110%);
+   //}
+ }
 
 
 

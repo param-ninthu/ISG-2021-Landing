@@ -43,7 +43,7 @@ const Prizes = () => {
                     </Row>
                     <Row >
                         <Col lg={7} className="m-auto">
-                            <h3 className="h3 text-center aw-consolation" >
+                            <h3 className="h3 text-center aw-consolation effectHv" >
                                 Consolation prizes for other participants
                             </h3>
                         </Col>
