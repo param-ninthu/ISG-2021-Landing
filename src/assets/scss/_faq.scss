@@ -4,7 +4,7 @@
 .ud-faq {
     padding-top: 120px;
     padding-bottom: 90px;
-    background-color: rgb(19, 17, 17);
+    background-color: #080b0b;
     position: relative;
     z-index: 1;
     color: var(--white);
@@ -21,9 +21,8 @@ h2 {
 }
 
 .ud-single-faq {
-    background-color: rgba(78, 77, 77, 0.616);
+    background-color: rgba(31, 30, 30, 0.671);
     border: 1px solid rgba(255, 139, 30, 0.692);
-    box-shadow: 0 20px 95px rgba(201, 203, 204, 0.3);
     border-radius: 10px;
     margin-bottom: 30px;
 
