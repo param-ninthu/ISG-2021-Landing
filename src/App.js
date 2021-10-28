@@ -27,15 +27,15 @@ function App() {
         </a>
       </header> */}
       <Prizes/>
-<<<<<<< HEAD
+
       <Faq/>
         <SampleSection/>
-=======
+
       <SampleSection/>
       <Timeline/>
       <SampleSection/>
       <Footer/>
->>>>>>> 2b1b183c8a1715a4d2a6493fcfeb693e3502bd04
+
     </div>
   );
 }
