@@ -5,11 +5,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Prizes from "./components/Prizes";
 import SampleSection from "./components/SampleSection";
+import NavBar from "./components/NavBar";
 
 function App() {
     AOS.init();
   return (
     <div className="App">
+        <NavBar/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -24,6 +26,7 @@ function App() {
           Learn React
         </a>
       </header>
+
       <Prizes/>
         <SampleSection/>
     </div>
