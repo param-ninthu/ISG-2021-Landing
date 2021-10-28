@@ -4,9 +4,10 @@ import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Prizes from "./components/Prizes";
+import Faq from "./components/Faq";
 import SampleSection from "./components/SampleSection";
-import NavBar from "./components/NavBar";
-
+import Footer from "./components/footer"
+import Timeline from "./components/TimelineMain"
 function App() {
     AOS.init();
   return (
@@ -28,7 +29,15 @@ function App() {
       </header>
 
       <Prizes/>
+
+      <Faq/>
         <SampleSection/>
+
+      <SampleSection/>
+      <Timeline/>
+      <SampleSection/>
+      <Footer/>
+
     </div>
   );
 }
