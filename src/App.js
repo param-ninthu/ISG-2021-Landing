@@ -6,7 +6,8 @@ import 'aos/dist/aos.css';
 import Prizes from "./components/Prizes";
 import Faq from "./components/Faq";
 import SampleSection from "./components/SampleSection";
-
+import Footer from "./components/footer"
+import Timeline from "./components/TimelineMain"
 function App() {
     AOS.init();
   return (
@@ -26,8 +27,15 @@ function App() {
         </a>
       </header> */}
       <Prizes/>
+<<<<<<< HEAD
       <Faq/>
         <SampleSection/>
+=======
+      <SampleSection/>
+      <Timeline/>
+      <SampleSection/>
+      <Footer/>
+>>>>>>> 2b1b183c8a1715a4d2a6493fcfeb693e3502bd04
     </div>
   );
 }
