@@ -2,6 +2,7 @@ import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import logo from "../assets/images/ics-logo.png"
 import FlipCountdown from '@rumess/react-flip-countdown';
+import ReactRotatingText from "react-rotating-text/lib/ReactRotatingText";
 
 const HeroSection = () => {
   return (
@@ -14,8 +15,10 @@ const HeroSection = () => {
               <h1 className="ud-hero-title my-3 mb-4 mb-lg-0">
                 iCS - Hack The World
               </h1>
-              <h3 className="ud-hero-subtitle pb-lg-1 my-3 my-md-2 mb-xxl-3 px-4">24-hour Capture The Flag (CTF)
-                Competition</h3>
+              <h3 className="ud-hero-subtitle pb-lg-1 my-3 my-md-2 mb-xxl-3 px-4">
+                <ReactRotatingText
+                  items={['24-hour Capture The Flag (CTF) Competition', 'Organized by ISACA Student Group of UCSC', 'Get ready!']}/>
+              </h3>
               <p className="ud-hero-desc mt-3 mt-xxl-4 p-2">
                 Registrations open in
               </p>

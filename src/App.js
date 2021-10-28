@@ -1,12 +1,13 @@
 import './assets/scss/styles-main.scss';
 import './App.css';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Prizes from "./components/Prizes";
 import SampleSection from "./components/SampleSection";
 import HeroSection from "./components/HeroSection";
 
 function App() {
-  // AOS.init();
+  AOS.init();
   return (
     <div className="App">
 

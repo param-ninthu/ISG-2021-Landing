@@ -49,6 +49,7 @@
 
   .ud-hero-logo {
     height: 180px;
+    animation: bannerImgBounce 3s ease-in-out 0s infinite alternate;
 
     @media #{$sm} {
       height: 200px;
@@ -109,6 +110,10 @@
         }
       }
     }
+  }
+
+  .react-rotating-text-cursor {
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
   }
 }
 
@@ -173,5 +178,28 @@
       top: -20px;
       right: -20px;
     }
+  }
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bannerImgBounce {
+  0% {
+    -webkit-transform: translateY(6px) translateX(0);
+    transform: translateY(6px) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-8px) translateX(0px);
+    transform: translateY(-8px) translateX(0px);
   }
 }
