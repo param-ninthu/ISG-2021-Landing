@@ -77,12 +77,38 @@
   }
 
   .ud-hero-desc {
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 0.8em;
     text-align: center;
     color: var(--white);
     opacity: 0.8;
-    max-width: 600px;
+  }
+
+  .flip-countdown {
+    color: rgba(255, 255, 255, 0.7);
+
+    .flip-countdown-title {
+      font-size: 0.8em !important;
+      padding-top: 10px;
+    }
+
+    .flip-countdown-piece {
+      margin: 0 0.3em;
+
+      .flip-countdown-card .flip-countdown-card-sec {
+        font-size: 64px;
+        margin: 15px;
+
+        .card__top, .card__bottom, .card__back {
+          padding: 0 0.2em;
+        }
+
+        .card__back {
+          padding: 0 0.097em;
+        }
+      }
+    }
   }
 }
 
