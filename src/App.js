@@ -9,7 +9,8 @@ import Sponsors from './components/Sponsors';
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/footer"
-import Timeline from "./components/TimelineMain"
+import Timeline from "./components/TimelineMain";
+import About from "./components/About";
 
 function App() {
     AOS.init();
@@ -17,6 +18,7 @@ function App() {
         <div className="App">
             <NavBar/>
             <HeroSection/>
+            <About/>
             <Prizes/>
             <Sponsors/>
             <Faq/>
