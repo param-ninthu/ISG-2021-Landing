@@ -22,7 +22,7 @@ const Sponsors = () => {
             </Row>
 
             <Row>
-              <Col lg={4} md={6} data-aos="fade-right">
+              <Col lg={4} md={6} xs={12} data-aos="fade-right">
                 <div className="ud-single-sponser first">
                   <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
                           title="YouTube video player" frameBorder="0"
@@ -37,7 +37,7 @@ const Sponsors = () => {
                   </p>
                 </div>
               </Col>
-              <Col lg={4} md={6} data-aos="zoom-in">
+              <Col lg={4} md={6} xs={12} data-aos="zoom-in">
                 <div className="ud-single-sponser second">
                   <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
                           title="YouTube video player" frameBorder="0"
@@ -52,7 +52,7 @@ const Sponsors = () => {
                   </p>
                 </div>
               </Col>
-              <Col lg={4} md={6} data-aos="fade-left">
+              <Col lg={4} md={6} xs={12} data-aos="fade-left">
                 <div className="ud-single-sponser third">
                   <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
                           title="YouTube video player" frameBorder="0"
@@ -69,7 +69,7 @@ const Sponsors = () => {
               </Col>
             </Row><br/><br/>
             <Row>
-              <Col lg={4} md={6} data-aos="fade-right">
+              <Col lg={4} md={6} xs={12} data-aos="fade-right">
                 <div className="ud-single-sponser fourth">
                   <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
                           title="YouTube video player" frameBorder="0"
@@ -84,7 +84,7 @@ const Sponsors = () => {
                   </p>
                 </div>
               </Col>
-              <Col lg={4} md={6} data-aos="zoom-in">
+              <Col lg={4} md={6} xs={12} data-aos="zoom-in">
                 <div className="ud-single-sponser fifth">
                   <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
                           title="YouTube video player" frameBorder="0"
@@ -99,7 +99,7 @@ const Sponsors = () => {
                   </p>
                 </div>
               </Col>
-              <Col lg={4} md={6} data-aos="fade-left">
+              <Col lg={4} md={6} xs={12} data-aos="fade-left">
                 <div className="ud-single-sponser sixth">
                   <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
                           title="YouTube video player" frameBorder="0"
