@@ -5,7 +5,7 @@
     background-color: rgb(19, 17, 17);
 
     @media #{$xs} {
-        padding: 80px;
+        padding: 10px;
     }
 
     h2, font {
@@ -21,6 +21,13 @@
 
         font {
             font-size: medium;
+        }
+        
+        iframe {
+            @media #{$lg, $xs} {
+                width: 150px;
+                height: 100px;
+            }
         }
 
         .ud-content {
