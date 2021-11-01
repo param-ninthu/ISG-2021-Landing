@@ -10,8 +10,14 @@
 {
     background-color: #35333200;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
+
+// .Title{
+//   padding-top: 100px;
+//   color: #35333200;
+// }
+
 
 .card-title{
   color: rgb(255, 104, 4);
@@ -40,7 +46,13 @@
 }
 
 .Space{
-  padding-bottom: 3%;
-  padding-top: 3%;
+  padding-bottom: 100px;
+  padding-top: 5px;
 }
 
+.LContent{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: 25px;
+  color: #ffffff;
+}
