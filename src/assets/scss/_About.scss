@@ -8,7 +8,7 @@
 
 .card-body
 {
-    background-color: #353332;
+    background-color: #35333200;
     width: 100%;
     height: auto;
 }
@@ -18,16 +18,21 @@
 }
 .card-group{
      padding: 16px;
-     background-color: #353332;
-     text-align: center;
+     background-color: #35333200;
+     text-align: justify;
+     border-radius: 25px
 }
 
 .card{
+  backdrop-filter: blur(10px);
   box-sizing: content-box;
-  border-width: 5px;
+  border-width: 1px;
   border-style: solid;
-  border-image: linear-gradient(to right bottom, #d46012, #ffffff);
-  border-image-slice: 1;
+  background-color: #00000000;
+  border-color: #be4a10;
+  // border-image: linear-gradient(to right bottom, #d46012, #db5b11);
+  // border-image-slice: 1;
+  border-radius: 15px;
 }
 
 .card-text{
