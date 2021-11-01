@@ -1,5 +1,5 @@
 import React, {Col, Container, Row} from 'react-bootstrap';
-import '../assets/scss/_about.scss';
+import '../assets/scss/_About.scss';
 
 const About = () => {
 
