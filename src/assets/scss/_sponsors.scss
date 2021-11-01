@@ -1,33 +1,73 @@
 /* ===== Sponsors CSS ===== */
 
 .ud-sponsors {
-    padding-top: 120px;
+    padding: 50px 0;
     background-color: rgb(19, 17, 17);
 
     @media #{$xs} {
         padding: 10px;
     }
 
-    h2, font {
+    h2, h5, font {
         color: var(--white);
     }
 
+    h3 {
+        margin: 50px 10px;   
+    }
+
+    .platinum-sponsor {
+        color: #E5E4E2;
+    }
+
+    .gold-sponsor {
+        color: #b8860b;
+    }
+
+    .silver-sponsor {
+        color: #B8B9BB;
+    }
+
     .ud-single-sponser {
-        border: 1px solid #FFB81C;
         border-radius: 8px;
         padding: 25px 5px;
-        margin: 0 5px;
+        margin: 5px 5px;
         background-color: #191a18;
+
+        &.first , &.second , &.third {
+            border: 1px solid #E5E4E2;
+        }
+
+        &.fourth , &.fifth , &.sixth {
+            border: 1px solid #b8860b;
+        }
+
+        &.seventh , &.eighth , &.ninth {
+            border: 1px solid #B8B9BB;
+        }
+
+        .header-section {
+            display: flex;
+        }
+
+        .logo-section {
+            width: 30%;
+            display: flex;
+            margin-left: 10px;
+
+            img {
+                width: 50%;
+                margin: 10px;
+            }
+        }
+
+        .company-name {
+            width: 70%;
+            padding: 25px;
+        }
 
         font {
             font-size: medium;
-        }
-        
-        iframe {
-            @media #{$lg, $xs} {
-                width: 150px;
-                height: 100px;
-            }
         }
 
         .ud-content {
@@ -35,12 +75,19 @@
             padding: 10px;
             text-align-last: center;
         }
+
+        iframe {
+            @media #{$lg, $xs} {
+                width: 150px;
+                height: 100px;
+            }
+        }
     }
 
     .ud-single-sponser:hover {
         transform: scale(1.1);
         transition: .2s;
-        border-color: rgba(255, 139, 30, 0.692);
+        // border-color: rgba(255, 139, 30, 0.692);
     }
 
 }

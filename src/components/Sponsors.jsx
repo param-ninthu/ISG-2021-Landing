@@ -1,5 +1,9 @@
 import React from 'react';
-import {Col, Container, Row} from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
+import SingleSponsor from './SingleSponsor';
+
+import company1 from '../pictures/sponsors/1.jpg';
+import company2 from '../pictures/sponsors/2.jpg';
 
 const Sponsors = () => {
   return (
@@ -9,113 +13,106 @@ const Sponsors = () => {
             <Row>
               <Col lg={12}>
                 <div className="ud-section-title mx-auto text-center">
-                  {/* <span className="ud-topic">Sponsors</span> */}
                   <h2 data-aos="zoom-in-down">SPONSORS</h2>
-                  <br/>
                   <div className="text">
-                    <p>
+                    {/* <p>
                       Here are the our honurable sponsors.
-                    </p><br/><br/>
+                    </p> */}
                   </div>
                 </div>
               </Col>
             </Row>
 
             <Row>
-              <Col lg={4} md={6} xs={12} data-aos="fade-right">
-                <div className="ud-single-sponser first">
-                  <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
-                          title="YouTube video player" frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen/>
-                  <p className="ud-content">
-                    <font>Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.</font>
-                  </p>
-                </div>
-              </Col>
-              <Col lg={4} md={6} xs={12} data-aos="zoom-in">
-                <div className="ud-single-sponser second">
-                  <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
-                          title="YouTube video player" frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen/>
-                  <p className="ud-content">
-                    <font>Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.</font>
-                  </p>
-                </div>
-              </Col>
-              <Col lg={4} md={6} xs={12} data-aos="fade-left">
-                <div className="ud-single-sponser third">
-                  <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
-                          title="YouTube video player" frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen/>
-                  <p className="ud-content">
-                    <font>Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.</font>
-                  </p>
-                </div>
-              </Col>
-            </Row><br/><br/>
-            <Row>
-              <Col lg={4} md={6} xs={12} data-aos="fade-right">
-                <div className="ud-single-sponser fourth">
-                  <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
-                          title="YouTube video player" frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen/>
-                  <p className="ud-content">
-                    <font>Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.</font>
-                  </p>
-                </div>
-              </Col>
-              <Col lg={4} md={6} xs={12} data-aos="zoom-in">
-                <div className="ud-single-sponser fifth">
-                  <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
-                          title="YouTube video player" frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen/>
-                  <p className="ud-content">
-                    <font>Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.</font>
-                  </p>
-                </div>
-              </Col>
-              <Col lg={4} md={6} xs={12} data-aos="fade-left">
-                <div className="ud-single-sponser sixth">
-                  <iframe width="300" height="200" src="https://www.youtube.com/embed/gqhOH4jkpVI"
-                          title="YouTube video player" frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen/>
-                  <p className="ud-content">
-                    <font>Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.</font>
-                  </p>
-                </div>
-              </Col>
+              <h3 className="platinum-sponsor" data-aos="flip-left">PLATINUM SPONSOR</h3>
+                <SingleSponsor 
+                  animation = "fade-right"
+                  sponsor_no = "ud-single-sponser first"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+
+                <SingleSponsor 
+                  animation = "zoom-in"
+                  sponsor_no = "ud-single-sponser second"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+
+                <SingleSponsor 
+                  animation = "fade-left"
+                  sponsor_no = "ud-single-sponser third"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
             </Row>
-            <br/>
+
+            <Row>
+              <h3 className="gold-sponsor" data-aos="flip-left">GOLD SPONSOR</h3>
+                <SingleSponsor 
+                  animation = "fade-right"
+                  sponsor_no = "ud-single-sponser fourth"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+
+                <SingleSponsor 
+                  animation = "zoom-in"
+                  sponsor_no = "ud-single-sponser fifth"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+
+                <SingleSponsor 
+                  animation = "fade-left"
+                  sponsor_no = "ud-single-sponser sixth"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+            </Row>
+
+            <Row>
+              <h3 className="silver-sponsor" data-aos="flip-left">SILVER SPONSOR</h3>
+                <SingleSponsor 
+                  animation = "fade-right"
+                  sponsor_no = "ud-single-sponser seventh"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+
+                <SingleSponsor 
+                  animation = "zoom-in"
+                  sponsor_no = "ud-single-sponser eighth"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+
+                <SingleSponsor 
+                  animation = "fade-left"
+                  sponsor_no = "ud-single-sponser ninth"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+            </Row>
+
           </Container>
         </section>
       </section>
