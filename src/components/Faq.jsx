@@ -1,6 +1,6 @@
 import React from "react";
 import {Col, Container, Row} from 'react-bootstrap';
-import 'bootstrap'
+import FaqComponent from "./FaqComponent";
 
 const Faq = () => {
     return (
@@ -20,155 +20,49 @@ const Faq = () => {
 
                     <Row>
                         <Col lg={6}>
-                            <div className="ud-single-faq wow fadeInUp" data-aos="fade-up">
-                                <div className="accordion">
-                                    <button
-                                        className="ud-faq-btn collapsed"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne"
-                                    >
-                    <span className="icon flex-shrink-0">
-                      <i className="bi bi-chevron-down"/>
-                    </span>
-                                        <span className="q-title">Question 01</span>
-                                    </button>
-                                    <div id="collapseOne" className="accordion-collapse collapse">
-                                        <div className="ud-faq-body">
-                                            Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown
-                                            printer took a galley of type and scrambled it to make a
-                                            type specimen book.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="ud-single-faq wow fadeInUp" data-aos="fade-up">
-                                <div className="accordion">
-                                    <button
-                                        className="ud-faq-btn collapsed"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo"
-                                    >
-                    <span className="icon flex-shrink-0">
-                    <i className="bi bi-chevron-down"/>
-                    </span>
-                                        <span className="q-title">Question 02</span>
-                                    </button>
-                                    <div id="collapseTwo" className="accordion-collapse collapse">
-                                        <div className="ud-faq-body">
-                                            Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown
-                                            printer took a galley of type and scrambled it to make a
-                                            type specimen book.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="ud-single-faq wow fadeInUp" data-aos="fade-up">
-                                <div className="accordion">
-                                    <button
-                                        className="ud-faq-btn collapsed"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree"
-                                    >
-                    <span className="icon flex-shrink-0">
-                    <i className="bi bi-chevron-down"/>
-                    </span>
-                                        <span className="q-title">Question 03</span>
-                                    </button>
-                                    <div
-                                        id="collapseThree"
-                                        className="accordion-collapse collapse"
-                                    >
-                                        <div className="ud-faq-body">
-                                            Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown
-                                            printer took a galley of type and scrambled it to make a
-                                            type specimen book.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <FaqComponent 
+                                target = "#collapseOne"
+                                question = "Question 01"
+                                collapseid = "collapseOne"
+                                answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            />
+
+                            <FaqComponent 
+                                target = "#collapseTwo"
+                                question = "Question 02"
+                                collapseid = "collapseTwo"
+                                answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            />
+
+                            <FaqComponent 
+                                target = "#collapseThree"
+                                question = "Question 03"
+                                collapseid = "collapseThree"
+                                answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            />
                         </Col>
+
                         <Col lg={6}>
-                            <div className="ud-single-faq wow fadeInUp" data-aos="fade-up">
-                                <div className="accordion">
-                                    <button
-                                        className="ud-faq-btn collapsed"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour"
-                                    >
-                    <span className="icon flex-shrink-0">
-                      <i className="bi bi-chevron-down"/>
-                    </span>
-                                        <span className="q-title">Question 04</span>
-                                    </button>
-                                    <div
-                                        id="collapseFour"
-                                        className="accordion-collapse collapse"
-                                    >
-                                        <div className="ud-faq-body">
-                                            Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown
-                                            printer took a galley of type and scrambled it to make a
-                                            type specimen book.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="ud-single-faq wow fadeInUp" data-aos="fade-up">
-                                <div className="accordion">
-                                    <button
-                                        className="ud-faq-btn collapsed"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFive"
-                                    >
-                    <span className="icon flex-shrink-0">
-                    <i className="bi bi-chevron-down"/>
-                    </span>
-                                        <span className="q-title">Question 05</span>
-                                    </button>
-                                    <div
-                                        id="collapseFive"
-                                        className="accordion-collapse collapse"
-                                    >
-                                        <div className="ud-faq-body">
-                                            Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown
-                                            printer took a galley of type and scrambled it to make a
-                                            type specimen book.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="ud-single-faq wow fadeInUp" data-aos="fade-up">
-                                <div className="accordion">
-                                    <button
-                                        className="ud-faq-btn collapsed"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSix"
-                                    >
-                    <span className="icon flex-shrink-0">
-                    <i className="bi-chevron-down"/>
-                    </span>
-                                        <span className="q-title">Question 06</span>
-                                    </button>
-                                    <div id="collapseSix" className="accordion-collapse collapse">
-                                        <div className="ud-faq-body">
-                                            Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown
-                                            printer took a galley of type and scrambled it to make a
-                                            type specimen book.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <FaqComponent 
+                                target = "#collapseFour"
+                                question = "Question 04"
+                                collapseid = "collapseFour"
+                                answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            />
+
+                            <FaqComponent 
+                                target = "#collapseFive"
+                                question = "Question 05"
+                                collapseid = "collapseFive"
+                                answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            />
+
+                            <FaqComponent 
+                                target = "#collapseSix"
+                                question = "Question 06"
+                                collapseid = "collapseSix"
+                                answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            />
                         </Col>
                     </Row>
                 </Container>
