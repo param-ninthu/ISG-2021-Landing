@@ -1,8 +1,7 @@
-/* ===== Pricing CSS ===== */
-$NeonP : #8c3700;
-$NeonS : #885a04;
-.aw-dark{
-  background: black;
+/* ===== Prizes CSS ===== */
+
+.aw-dark {
+    background: black;
 }
 
 #pricing {
@@ -218,33 +217,6 @@ $NeonS : #885a04;
   border-radius: 10px;
   //box-shadow: rgba(255, 102, 0, 0.85) 0 30px 60px -12px inset,
   //rgba(255, 102, 0, 0.58) 18px 8px 36px -18px inset ;
-}
-
-//neon animation
-.neonText {
-    animation: flicker 1.5s infinite alternate;
-}
-
-/* Flickering animation */
-@keyframes flicker {
-
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
-      text-shadow:
-      0 0 0 $NeonP,
-      0 0 4px $NeonP,
-      0 0 11px $NeonP,
-      0 0 20px $NeonS,
-      0 0 40px $NeonS,
-      0 0 600px $NeonS,
-      0 0 80px $NeonS,
-      0 0 110px $NeonS;
-  
-  }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-  }    
 }
 
 .effectHv {

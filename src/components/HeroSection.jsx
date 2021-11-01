@@ -12,10 +12,10 @@ const HeroSection = () => {
                     <Col lg={12} className="mb-5 pb-4">
                         <div className="ud-hero-content wow fadeInUp m-auto" data-wow-delay=".2s">
                             <img src={logo} alt="ISG Logo" className="mb-3 mb-md-2 mb-lg-1 mb-xxl-2 p-0 ud-hero-logo"/>
-                            <h1 className="ud-hero-title my-3 mb-4 mb-lg-0">
+                            <h1 className="ud-hero-title my-3 mb-4 mb-lg-2 glitch" data-text="iCS - Hack The World">
                                 iCS - Hack The World
                             </h1>
-                            <h3 className="ud-hero-subtitle pb-lg-1 my-3 my-md-2 mb-xxl-3 px-4">
+                            <h3 className="ud-hero-subtitle pt-1 pb-lg-1 my-3 my-md-2 mb-xxl-3 px-4">
                                 <ReactRotatingText
                                     items={['24-hour Capture The Flag (CTF) Competition', 'Organized by ISACA Student Group of UCSC', 'Get ready!']}/>
                             </h3>
