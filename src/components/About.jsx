@@ -12,7 +12,7 @@ const About = () => {
                  <section id="pricing" className="ud-pricing aw-dark-back">
                             <div className = "ud-section-title text-center neonText mx-auto">
                             <h2 data-aos="zoom-in-up">
-                                    WHAT IS ICS HACK THE WORLD?</h2>
+                                    WHAT IS iCS HACK THE WORLD?</h2>
                             </div>
                             <div className="Space">
                             <div data-aos="zoom-in-up">
@@ -63,7 +63,7 @@ const About = () => {
   <div class="card mb-4 border-0">
     <div class="card-body">
     <div data-aos="fade-right">
-      <h3 class="card-title">What is I have no experience?</h3>
+      <h3 class="card-title">No experience?</h3>
       <p class="card-text">We'll lend a hand. Join the sessions conducted by our sponsors on the 9th January 2021 via the online stream. But that's all the help you're gonna get from our end!</p>
     </div>
     </div>
